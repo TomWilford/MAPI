@@ -27,4 +27,10 @@ class DocumentFactory implements CompoundDocumentFactory
 
         return new DocumentElement($ole, $ole->root);
     }
+
+    public function close(DocumentElement $documentElement)
+    {
+        $ole = $documentElement->getOle();
+        $ole->_OLE();
+    }
 }
