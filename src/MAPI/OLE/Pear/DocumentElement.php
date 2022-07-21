@@ -27,6 +27,17 @@ class DocumentElement implements CompoundDocumentElement
         //$this->wrappedChildren = null;
     }
 
+
+    public function getOle(): OLE
+    {
+        return $this->ole;
+    }
+
+    public function setOle(OLE $ole): void
+    {
+        $this->ole = $ole;
+    }
+
     public function getIndex()
     {
         return $this->pps->No;
